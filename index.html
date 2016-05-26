@@ -1,0 +1,77 @@
+<html><body>
+<h1>Pronunciation downloader</h1>
+
+<p>This utility software allows you to download pronunciations of different English words</p>
+
+<h3><a id="requirements" class="anchor" href="#requirements"></a>Requirements</h3>
+
+<ul>
+    <li>awk (for example, <a href="https://www.gnu.org/software/gawk/">gawk</a>)</li>
+    <li>curl</li>
+    <li>mpg123</li>
+</ul>
+
+<hr>
+
+<h3><a id="user-content-install" class="anchor" href="#install"></a>Installation</h3>
+
+<p>Simply insert utility into the preferable location</p>
+<p>Give utility rights to be performed(<i>chmod +x words.sh</i> in terminal)</p>
+
+<h3><a id="user-content-run" class="anchor" href="#run"></a>Running</h3>
+
+<p>For run, just type in terminal in folder where program is located:<i>./words.sh</i></p>
+<p>List of words can be provided by creating file <b>list.txt</b> in directory where downloader located.</p>
+<p>Each word will be looked for in <a href="https://www.dictionary.cambridge.org">Cambridge Dictionaries</a></p>
+<p>The result of searching will be printed in <b>result.txt</b> </p>
+<p>Possible situations:</p>
+<p><ul>
+	<li>English and American pronunciation were found: "word OK" will be printed in <b>result.txt</b></li>
+	<li>Only English pronunciation was found: "word UK" will be printed in <b>result.txt</b></li>
+	<li>Only American pronunciation was found: "word US" will be printed in <b>result.txt</b></li>
+	<li>Neither English nor American pronunciation were found: "word EMPTY" will be printed in <b>result.txt</b></li>
+</ul></p>
+<h3><a id="user-content-config" class="anchor" href="#config"></a>Options</h3>
+<p>There are several additional options, that can be activated:</p>
+<p>If system bans you for too big frequency of requires, try to do some of this options (or all of them):
+	<ul>
+	<li>uncomment string sleep 5s for activating addition in 5 seconds between each require</li>
+	<li>add this characters: "-x ://94.228.198.82:8080" between curl and url for activating proxy</li>
+	<li></li>
+
+</ul></p>
+
+<!--<ul>
+    <li>Via <i>config.ini</i>. It has to be done before the application launch.</li>
+    <li>Via a graphical form during runtime.</li>
+</ul>
+<blockquote>Note, however, that priority is given to the credentials provided via the form.</blockquote>
+
+<p>To check your balance manually, right-click on the icon and select <i>Balance</i>.</p>
+<p>To change login and/or password, right-click on the icon and select <i>Config</i>. A simple form with two text fields will appear. Fill them in and click OK button.</p>
+<p>To exit the application, right-click on the icon and select <i>Exit</i>.</p>
+
+<h3><a id="user-content-config" class="anchor" href="#config"></a>Options</h3>
+
+<p>The configuration file is <i>config.ini</i>. It must be present in the same directory as <i>BalanceChecker.jar</i>. If configuration file
+    is not present or the application has failed to read it, the options will be set to <i>default</i>. Options are:</p>
+<ul>
+    <li><i>firstRun</i> - the date and time when the first balance check should be done. If the specified date is earlier than the current date,
+        the first check will happen on application launch. <i>Default</i> is 20 seconds.</li>
+    <li><i>updateFrequency</i> - the frequency with which the application should check the balance. <i>Default</i> is 1 hour.</li>
+</ul>
+
+
+-->
+
+<hr>
+
+<p>Links:</p>
+
+<ul>
+    <li><a href="">Subversion repository</a></li>
+</ul>
+
+<p>Feel free to e-mail me: dyachenko.v.a at yandex.ru</p>
+
+</body></html>
